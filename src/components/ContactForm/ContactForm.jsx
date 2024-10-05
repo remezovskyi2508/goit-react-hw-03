@@ -7,7 +7,7 @@ export default function ContactForm({ contactValue, handleSubmit, FeedbackSchema
   const nameFieldId = useId();
   const phoneFieldId = useId();
   return (
-    <Formik initialValues={...contactValue} validationSchema={FeedbackSchema} onSubmit={handleSubmit} >
+    <Formik initialValues={contactValue} validationSchema={FeedbackSchema} onSubmit={handleSubmit} >
       <Form className={css.form}>
         <label className={css.inputName} htmlFor={nameFieldId}>Name</label>
         <Field
